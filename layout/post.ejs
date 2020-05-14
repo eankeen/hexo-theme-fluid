@@ -30,7 +30,7 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
               <div class="post-metas mb-3">
                 <% if (page.categories && page.categories.length > 0) { %>
                   <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
+                    <i data-feather="grid"></i>
                     <% page.categories.each(function(cate) { %>
                       <a class="hover-with-bg" href="<%= url_for(cate.path) %>"><%- cate.name %></a>
                     <% }) %>
@@ -38,7 +38,7 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
                 <% } %>
                 <% if (page.tags && page.tags.length > 0 ) { %>
                   <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
+                    <i data-feather="tag"></i>
                     <% page.tags.each(function(tag) { %>
                       <a class="hover-with-bg" href="<%= url_for(tag.path) %>"><%- tag.name %></a>
                     <% }) %>
@@ -54,7 +54,7 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
                     <% const prev = prev_page(page) %>
                     <% if (prev) { %>
                       <a href="<%= url_for(prev.path) %>">
-                        <i class="iconfont icon-arrowleft"></i>
+                        <i data-feather="chevron-left""></i>
                         <span class="hidden-mobile"><%- prev.title %></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>

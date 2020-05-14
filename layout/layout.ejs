@@ -69,7 +69,8 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 
           <% if (theme.scroll_down_arrow.enable && theme.scroll_down_arrow.banner_height_limit <= banner_img_height) { %>
             <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
+              <!-- TODO: fix? -->
+              <i data-feather="iconfont icon-arrowdown"></i>
             </div>
           <% } %>
         </div>
