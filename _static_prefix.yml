@@ -43,6 +43,8 @@ github_markdown: https://cdn.staticfile.org/github-markdown-css/4.0.0/
 
 jquery: https://cdn.staticfile.org/jquery/3.4.1/
 
+feather: https://unpkg.com/feather-icons
+
 bootstrap: https://cdn.staticfile.org/twitter-bootstrap/4.4.1/
 
 highlightjs: https://cdn.staticfile.org/highlight.js/10.0.0/

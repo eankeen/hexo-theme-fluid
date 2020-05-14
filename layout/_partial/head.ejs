@@ -22,5 +22,6 @@ if (page.title) {
   <meta name="keywords" content="<%= config.keywords %>">
   <title><%= title %></title>
 
+  <%- js_ex(theme.static_prefix.typed, "/typed.min.js") %>
   <%- partial('_partial/css.ejs') %>
 </head>

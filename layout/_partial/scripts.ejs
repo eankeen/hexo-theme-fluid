@@ -23,6 +23,11 @@
   <%- js(theme.custom_js) %>
 <% } %>
 
+<%- js_ex(theme.static_prefix.feather, '') %>
+<script>
+  feather.replace()
+</script>
+
 <!-- Plugins -->
 <%- partial('_partial/plugins/analytics.ejs') %>
 <%- partial('_partial/plugins/typed.ejs') %>
