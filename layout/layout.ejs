@@ -28,7 +28,7 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
             <% if(is_post()) { %>
               <% if (theme.post.meta.date.enable) { %>
                 <div class="mt-3 post-meta">
-                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <i data-feather="calendar" aria-hidden="true"></i>
                   <time datetime="<%= full_date(page.date, 'YYYY-MM-DD HH:mm') %>">
                     <%= full_date(page.date, theme.post.meta.date.format) %>
                   </time>
@@ -39,7 +39,7 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
                 <% if (theme.post.meta.wordcount.enable) { %>
                   <% var wordcount_texts = theme.post.meta.wordcount.format.split('{}') %>
                   <span class="post-meta mr-2">
-                    <i class="iconfont icon-chart"></i>
+                    <i data-feather="bar-chart-2"></i>
                     <%- wordcount_texts[0] %><%- wordcount(page.content) %><%- wordcount_texts[1] %>
                   </span>
                 <% } %>
@@ -47,7 +47,7 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
                 <% if (theme.post.meta.min2read.enable) { %>
                   <% var min2read_texts = theme.post.meta.min2read.format.split('{}') %>
                   <span class="post-meta mr-2">
-                      <i class="iconfont icon-clock-fill"></i>
+                      <i data-feather="clock"></i>
                     <% var words = parseInt(theme.post.meta.min2read.words) %>
                     <%- min2read_texts[0] %>
                     <%- min2read(page.content, { cn: words, en: words / 2 }) %>
@@ -59,7 +59,7 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
                   <!-- 不蒜子统计文章PV -->
                   <% var views_texts = theme.post.meta.views.format.split('{}') %>
                   <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
-                    <i class="iconfont icon-eye" aria-hidden="true"></i>
+                    <i data-feather="eye" aria-hidden="true"></i>
                     <%- views_texts[0] %><span id="busuanzi_value_page_pv"></span><%- views_texts[1] %>
                   </span>
                 <% } %>
@@ -104,7 +104,7 @@ var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 
   <% if (theme.scroll_top_arrow.enable) { %>
     <a id="scroll-top-button" href="#" role="button">
-      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      <i data-feather="chevrons-up" aria-hidden="true"></i>
     </a>
   <% } %>
 

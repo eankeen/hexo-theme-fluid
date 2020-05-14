@@ -45,6 +45,8 @@ jquery: https://cdn.staticfile.org/jquery/3.4.1/
 
 feather: https://unpkg.com/feather-icons
 
+my_font: https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap
+
 bootstrap: https://cdn.staticfile.org/twitter-bootstrap/4.4.1/
 
 highlightjs: https://cdn.staticfile.org/highlight.js/10.0.0/
